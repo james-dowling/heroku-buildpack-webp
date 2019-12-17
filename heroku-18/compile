@@ -1,0 +1,13 @@
+#!/bin/sh
+
+apt remove -y imagemagick
+wget https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.0.3.tar.gz
+tar xfvz libwebp-1.0.3.tar.gz
+cd libwebp-1.0.3 && ./configure && make
+cd libwebp-1.0.3 && make install
+cd libwebp-1.0.3 && ldconfig /usr/local/lib
+wget https://imagemagick.org/download/ImageMagick-7.0.9-8.zip
+unzip ./ImageMagick-7.0.9-8.zip
+cd ImageMagick-7.0.9-8 && ./configure && make
+cd ImageMagick-7.0.9-8 && make install
+cd ImageMagick-7.0.9-8 && ldconfig /usr/local/lib
