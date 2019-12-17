@@ -6,8 +6,8 @@ tar xfvz libwebp-1.0.3.tar.gz
 cd libwebp-1.0.3 && ./configure && make
 cd libwebp-1.0.3 && make install
 cd libwebp-1.0.3 && ldconfig /usr/local/lib
-wget https://imagemagick.org/download/ImageMagick-7.0.9-8.zip
-unzip ./ImageMagick-7.0.9-8.zip
-cd ImageMagick-7.0.9-8 && ./configure && make
-cd ImageMagick-7.0.9-8 && make install
-cd ImageMagick-7.0.9-8 && ldconfig /usr/local/lib
+wget https://imagemagick.org/download/ImageMagick.zip
+unzip ./ImageMagick.zip
+cd ImageMagick && ./configure && make
+cd ImageMagick && make install
+cd ImageMagick && ldconfig /usr/local/lib
